@@ -32,7 +32,9 @@
 
   
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/coom/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/coom/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -42,11 +44,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="/coom/" class="profilepic">
+		<a href="/" class="profilepic">
 			<img src="/img/header.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/coom/">Akihi</a></h1>
+		  <h1 class="header-author"><a href="/">Akihi</a></h1>
 		</hgroup>
 		
 
@@ -165,7 +167,7 @@
 
         
         <a href="/coom/2020/05/10/hello-world/" class="archive-article-date">
-  	<time datetime="2020-05-10T09:39:10.644Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-10</time>
+  	<time datetime="2020-05-10T10:48:27.974Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-10</time>
 </a>
         
       </header>
@@ -176,13 +178,26 @@
 <h2 id="拒绝刻板"><a href="#拒绝刻板" class="headerlink" title="拒绝刻板"></a>拒绝刻板</h2><h3 id><a href="#" class="headerlink" title></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">起风了</span><br></pre></td></tr></table></figure>
 
 <h3 id="大鱼"><a href="#大鱼" class="headerlink" title="大鱼"></a>大鱼</h3>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Unrecognized tag argument(2): autoplay=false");
-			</script>
-
-
-
-
+        <div id="aplayer-OHapedoJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-OHapedoJ"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "大鱼",
+              author: "紫格哈哈",
+              url: "https://music.163.com/outchain/player?type=2&id=418257893&auto=1&height=66",
+              pic: "http://p2.music.126.net/fWlxuLvPe5b-1s2SX-Mprw==/17946228788722129.jpg?param=130y130",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
 
       
 
